@@ -8,7 +8,7 @@
 
   <div class="main-wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
       </a>
       <nav class="main-nav">
@@ -18,7 +18,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" >
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -27,8 +27,8 @@
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item--active">
+            <li class="site-list__item site-list__item--active">
+              <a>
                 Форма отзыва
               </a>
             </li>
@@ -79,13 +79,11 @@
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
                     <label for="phone">Контактный телефон<sup>*</sup>:</label>
-                    <input type="text" id="phone" name="phone" placeholder="Введите телефон" required>
-                    <i class="user-contacts__icon--phone"></i>
+                    <input class="user-contacts__input user-contacts__input--phone" type="text" id="phone" name="phone" placeholder="Введите телефон" required>
                   </li>
                   <li class="user-contacts__item">
                     <label for="email">Электронная почта<sup>*</sup>:</label>
-                    <input type="text" id="email" name="email" placeholder="Введите e-mail" required>
-                    <i class="user-contacts__icon--email"></i>
+                    <input class="user-contacts__input user-contacts__input--email" type="text" id="email" name="email" placeholder="Введите e-mail" required>
                   </li>
                 </ul>
               </fieldset>
@@ -127,11 +125,11 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="review__emotion legend">
+              <fieldset class="review__emotion emotion">
                 <legend class="emotion__legend">Опишите свои эмоции:</legend>
-                <textarea id="emotion" name="emotion"
+                <textarea id="textarea-emotion" name="emotion"
                           rows="5" cols="26" placeholder="Опишите подробно все свои восторги"></textarea>
-                <label class="visually-hidden" for="emotion">Опишите подробно все свои восторги</label>
+                <label class="visually-hidden" for="textarea-emotion">Опишите подробно все свои восторги</label>
               </fieldset>
             </div>
             <p class="feedback__bottom">
