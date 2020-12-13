@@ -14,13 +14,12 @@
         <img src="img/logo-small.svg" width="102" height="84" alt="Город Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--close " type="button">
+          <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23 2.77L20.1 0l-8.6 8.23L2.9 0 0 2.77 8.6 11 0 19.23 2.9 22l8.6-8.23L20.1 22l2.9-2.77L14.4 11 23 2.77z" fill="#fff"/></svg>
+          <svg class="visually-hidden" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper ">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>
@@ -52,7 +51,7 @@
 
       <section class="greeting">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="greeting__welcome-image" src="img/welcome-text.svg" alt="Скалы Седоны лучше Великого Каньона" width="457" height="351">
+        <img class="greeting__welcome-image" src="img/welcome-text.svg" alt="Скалы Седоны лучше Великого Каньона" width="901" height="389">
       </section>
 
       <section class="features">
@@ -67,9 +66,11 @@
               <div class="reason__wrapper">
                 <h3 class="reason__title">Настоящий городок</h3>
                 <span class="reason__number">— №1 —</span>
-                <p class="reason__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="reason__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="reason__image" src="img/sedona-afternoon.jpg" alt="Седона днём" width="520" height="260">
+              <div class="reason__cropped">
+                <img class="reason__image" src="img/sedona-afternoon.jpg" alt="Седона днём" width="520" height="260">
+              </div>
             </div>
             <ul class="features__additional-list">
               <li class="features__additional-item">
@@ -97,9 +98,11 @@
               <div class="reason__wrapper">
                 <h3 class="reason__title">Там есть Мост&nbsp;дьявола</h3>
                 <span class="reason__number">— №2 —</span>
-                <p class="reason__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="reason__image" src="img/sedona-bridge.jpg" alt="Седонский мост" width="520" height="260">
+              <div class="reason__cropped">
+                <img class="reason__image" src="img/sedona-bridge.jpg" alt="Седонский мост" width="520" height="260">
+              </div>
             </div>
           </li>
           <li class="features__item">
@@ -107,7 +110,7 @@
               <div class="reason__wrapper">
                 <h3 class="reason__title">Небольшая площадь</h3>
                 <span class="reason__number">— №3 —</span>
-                <p class="reason__description">Все достопримечательности находятся очень близко</p>
+                <p class="reason__description">Вce интересные места находятся очень близко</p>
               </div>
             </div>
           </li>
@@ -136,7 +139,7 @@
         <div class="hotel-search__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="hotel-search__text">Заинтересовались?</p>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="button hotel-search__button" href="#">Найти гостиницу</a>
         </div>
       </section>
@@ -144,7 +147,7 @@
       <section class="map">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="map__wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209572.29225527812!2d-111.92912064410649!3d34.84197616459538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1603794267474!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209572.29225527812!2d-111.92912064410649!3d34.84197616459538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1603794267474!5m2!1sru!2sru" width="1200" height="593" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
@@ -158,17 +161,20 @@
             <ul class="contacts__social social">
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="#">
-                  Мы в Твиттере
+                  <span class="visually-hidden">Мы в Твиттере</span>
+                  <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17"><path d="M10.95 1.14a3.1 3.1 0 013.58 1.18c.67-.23 1.33-.48 2-.7a2.34 2.34 0 01-.85 1.76c.69.17 1.3-.49 1.3-.49-.16 1-1 1.79-1.56 2.03C15.2 11.67 12.25 16.13 5.34 16H4.9c-.41 0-4.17-.46-4.9-1.89 2.27.2 3.9-.42 4.7-1.18-.97-.3-2.69-.47-2.99-2.95.35.11.57.23 1.2.12C1.7 9.25.36 8.53.44 6.33a1.9 1.9 0 001.34.47c-.7-.24-1.97-3.36-.9-4.95 1.82 1.85 3.74 3.6 7.16 3.77.2-2.29 1.13-3.83 2.9-4.48z" fill="#fff"/></svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="#">
-                  Мы в Фейсбуке
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                  <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="#">
-                  Мы в Ютубе
+                  <span class="visually-hidden">Мы в Ютубе</span>
+                  <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16"><path d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z" fill="#fff"/></svg>
                 </a>
               </li>
             </ul>
@@ -176,7 +182,7 @@
           <p class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
+              <svg role="img" aria-label="HTML Академия" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/></svg>
             </a>
           </p>
         </div>

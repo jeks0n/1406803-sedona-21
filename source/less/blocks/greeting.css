@@ -1,0 +1,18 @@
+.greeting {
+  margin-top: -23px;
+  position: relative;
+  height: 509px;
+  background-color: var(--basic-white);
+  background-image: url('../img/welcome-pattern.svg'), url('../img/welcome.jpg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+.greeting__welcome-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  margin: auto;
+}
+/*# sourceMappingURL=greeting.css.map */

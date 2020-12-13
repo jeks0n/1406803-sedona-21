@@ -1,0 +1,10 @@
+.button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+/*# sourceMappingURL=button.css.map */

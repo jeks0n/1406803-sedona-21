@@ -28,6 +28,14 @@
     }
   }
 
+  &:hover {
+    background-color: @basic-blue-dark;
+  }
+
+  &:active {
+    background-color: @basic-blue-darkest;
+  }
+
   a {
     display: flex;
     justify-content: center;
@@ -37,5 +45,9 @@
     font-weight: 700;
     padding-top: 11px;
     text-decoration: none;
+
+    &:focus {
+      color: @basic-white-lightest-transparent;
+    }
   }
 }
