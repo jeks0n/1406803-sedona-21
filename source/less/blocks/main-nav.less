@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 25px;
+
+  svg {
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+
+  &:hover path {
+    opacity: 0.6;
+  }
+
+  &:focus path {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+}

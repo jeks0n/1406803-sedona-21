@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 22px auto;
+  padding: 13px 0 0;
+  width: 150px;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6px;
+  width: 46px;
+  height: 48px;
+  background-color: @basic-blue;
+  color: @basic-white;
+
+  &:hover {
+    color: @basic-white;
+    background-color: @basic-blue-dark;
+  }
+
+  &:focus {
+    color: @basic-white-super-transparent;
+    background-color: @basic-blue-darkest;
+
+    path {
+      fill: @basic-white-lightest-transparent;
+    }
+  }
+}

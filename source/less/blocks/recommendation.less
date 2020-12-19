@@ -1,0 +1,45 @@
+.recommendation {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: @basic-white;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 39px;
+    width: 39px;
+    margin-top: -13px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.recommendation--house::before {
+  background-image: url("../img/icons/house.svg");
+  background-size: 39px 37px;
+}
+
+.recommendation--food::before {
+  background-image: url("../img/icons/food.svg");
+  background-size: 40px 35px;
+}
+
+.recommendation--gift::before {
+  background-image: url("../img/icons/gift.svg");
+  background-size: 30px 39px;
+}
+
+.recommendation__title {
+  margin: 0 68px 0;
+  min-height: 43px;
+  font-size: 18px;
+}
+
+.recommendation__description {
+  margin: -5px 25px  0 68px;
+  min-height: 43px;
+  color: @basic-black-light;
+}
