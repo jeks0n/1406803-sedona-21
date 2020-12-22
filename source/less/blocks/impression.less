@@ -1,0 +1,88 @@
+.impression {
+  border: none;
+  margin: 0;
+  padding-bottom: 17px;
+  border-bottom: 1px solid @basic-gray-lightest;
+}
+
+.impression__legend {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: auto;
+  padding-top: 21px;
+}
+
+.impression__list {
+  list-style: none;
+  padding: 0;
+  margin-top: -6px;
+}
+
+.impression__item {
+  margin: 23px 0;
+
+  label {
+    position: relative;
+    padding-top: 20px;
+    left: 77px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.impression__input {
+  & + label {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: 3px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background-color: @basic-white-gray;
+    }
+
+    &:hover {
+      &::before {
+        background-color: @basic-gray-lightest;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: @basic-gray-light;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:checked + label {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 20px;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: @basic-black-light;
+    }
+  }
+
+  &:focus + label {
+    &::before {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+}

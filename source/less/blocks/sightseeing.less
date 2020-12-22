@@ -1,0 +1,91 @@
+.sightseeing {
+  border: none;
+  margin: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid @basic-gray-lightest;
+}
+
+.sightseeing__legend {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding-top: 13px;
+}
+
+.sightseeing__list {
+  list-style: none;
+  padding: 0;
+  margin-top: -15px;
+}
+
+.sightseeing__item {
+  margin: 34px 0;
+
+  label {
+    position: relative;
+    padding-top: 20px;
+    left: 77px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.sightseeing__input {
+  & + label {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 56px;
+      height: 56px;
+      border-radius: 7px;
+      background-color: @basic-white-gray;
+    }
+
+    &:hover {
+      &::before {
+        background-color: @basic-gray-lightest;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: @basic-gray-light;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:checked + label {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 20px;
+      width: 21px;
+      height: 21px;
+      background-image: url('../img/icons/tick.svg');
+      background-size: 23px 23px;
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+  }
+
+  &:focus + label {
+    &::before {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+}

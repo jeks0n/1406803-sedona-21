@@ -11,11 +11,13 @@
   <div class="main-wrapper">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город Седона">
+        <img src="img/logo-small.svg" width="102" height="84" alt="Город Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="main-nav__toggle main-nav__toggle--close " type="button">
+          <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23 2.77L20.1 0l-8.6 8.23L2.9 0 0 2.77 8.6 11 0 19.23 2.9 22l8.6-8.23L20.1 22l2.9-2.77L14.4 11 23 2.77z" fill="#fff"/></svg>
+          <svg class="visually-hidden" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -47,19 +49,19 @@
 
       <section class="form-title">
         <h1 class="visually-hidden">Форма отзыва об отелях в Седоне</h1>
-        <div class="form-title__decoration"></div>
+        <img class="form-title__image" src="img/sedona.svg" alt="Седона текстом" width="229" height="39">
       </section>
 
-      <div class="inner-container">
-        <section class="feedback">
-          <div class="feedback__wrapper">
-            <h2 class="visually-hidden">Заполнение отзыва</h2>
-            <p class="feedback__slogan">Оставьте свой отзыв</p>
-            <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          </div>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="review">
-              <fieldset class="review__introducing introducing">
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <h2 class="visually-hidden">Заполнение отзыва</h2>
+          <p class="feedback__slogan">Оставьте свой отзыв</p>
+          <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="review">
+            <div class="review__introducing">
+              <fieldset class="introducing inner-container">
                 <legend class="introducing__legend">Представьтесь:</legend>
                 <ul class="introducing__list">
                   <li class="introducing__item">
@@ -76,7 +78,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="review__user-contacts user-contacts">
+            </div>
+            <div class="review__user-contacts">
+              <fieldset class="user-contacts inner-container">
                 <legend class="user-contacts__legend">Контактная информация:</legend>
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
@@ -89,58 +93,64 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="review__impression impression">
+            </div>
+            <div class="review__impression">
+              <fieldset class="impression inner-container">
                 <legend class="impression__legend">Ваше общее впечатление:</legend>
                 <ul class="impression__list">
                   <li class="impression__item">
-                    <input class="impression__input" type="radio" id="positive-opinion" name="opinion" checked>
+                    <input class="impression__input visually-hidden" type="radio" id="positive-opinion" name="opinion" checked>
                     <label for="positive-opinion">Скорее положительное</label>
                   </li>
                   <li class="impression__item">
-                    <input class="impression__input" type="radio" id="negative-opinion" name="opinion">
+                    <input class="impression__input visually-hidden" type="radio" id="negative-opinion" name="opinion">
                     <label for="negative-opinion">Скорее отрицательное</label>
                   </li>
                   <li class="impression__item">
-                    <input class="impression__input" type="radio" id="uncertain-opinion" name="opinion">
+                    <input class="impression__input visually-hidden" type="radio" id="uncertain-opinion" name="opinion">
                     <label for="uncertain-opinion">Затрудняюсь ответить</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="review__sightseeing sightseeing">
+            </div>
+            <div class="review__sightseeing">
+              <fieldset class="sightseeing inner-container">
                 <legend class="sightseeing__legend">Посещенные достопримечательности:</legend>
                 <ul class="sightseeing__list">
                   <li class="sightseeing__item">
-                    <input class="sightseeing__input" type="checkbox" id="bridge" name="bridge" checked>
+                    <input class="sightseeing__input visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
                     <label for="bridge">Мост Дьявола</label>
                   </li>
                   <li class="sightseeing__item">
-                    <input class="sightseeing__input" type="checkbox" id="mountain" name="mountain" checked>
+                    <input class="sightseeing__input visually-hidden" type="checkbox" id="mountain" name="mountain" checked>
                     <label for="mountain">Гора-Колокол</label>
                   </li>
                   <li class="sightseeing__item">
-                    <input class="sightseeing__input" type="checkbox" id="park" name="park" checked>
+                    <input class="sightseeing__input visually-hidden" type="checkbox" id="park" name="park" checked>
                     <label for="park">Слайд-парк</label>
                   </li>
                   <li class="sightseeing__item">
-                    <input class="sightseeing__input" type="checkbox" id="rocks" name="rocks">
+                    <input class="sightseeing__input visually-hidden" type="checkbox" id="rocks" name="rocks">
                     <label for="rocks">Красные скалы</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="review__emotion emotion">
+            </div>
+            <div class="review__emotion">
+              <fieldset class="emotion inner-container">
                 <legend class="emotion__legend">Опишите свои эмоции:</legend>
                 <textarea id="textarea-emotion" name="emotion"
                           rows="5" cols="26" placeholder="Опишите подробно все свои восторги"></textarea>
                 <label class="visually-hidden" for="textarea-emotion">Опишите подробно все свои восторги</label>
               </fieldset>
             </div>
-            <p class="feedback__bottom">
-              <button class="button feedback__button" type="submit">Отправить отзыв</button>
-              <small class="feedback__legend feedback__legend--hidden">* — обязательные поля</small>
-            </p>
-          </form>
-        </section>
-      </div>
+          </div>
+          <p class="feedback__bottom">
+            <button class="button feedback__button" type="submit">Отправить отзыв</button>
+            <small class="feedback__legend feedback__legend--hidden">* — обязательные поля</small>
+          </p>
+        </form>
+      </section>
 
     </main>
 
@@ -153,17 +163,20 @@
             <ul class="contacts__social social">
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="#">
-                  Мы в Твиттере
+                  <span class="visually-hidden">Мы в Твиттере</span>
+                  <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17"><path d="M10.95 1.14a3.1 3.1 0 013.58 1.18c.67-.23 1.33-.48 2-.7a2.34 2.34 0 01-.85 1.76c.69.17 1.3-.49 1.3-.49-.16 1-1 1.79-1.56 2.03C15.2 11.67 12.25 16.13 5.34 16H4.9c-.41 0-4.17-.46-4.9-1.89 2.27.2 3.9-.42 4.7-1.18-.97-.3-2.69-.47-2.99-2.95.35.11.57.23 1.2.12C1.7 9.25.36 8.53.44 6.33a1.9 1.9 0 001.34.47c-.7-.24-1.97-3.36-.9-4.95 1.82 1.85 3.74 3.6 7.16 3.77.2-2.29 1.13-3.83 2.9-4.48z" fill="#fff"/></svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="#">
-                  Мы в Фейсбуке
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                  <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="#">
-                  Мы в Ютубе
+                  <span class="visually-hidden">Мы в Ютубе</span>
+                  <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16"><path d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z" fill="#fff"/></svg>
                 </a>
               </li>
             </ul>
@@ -171,7 +184,7 @@
           <p class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
+              <svg role="img" aria-label="HTML Академия" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/></svg>
             </a>
           </p>
         </div>
