@@ -1,0 +1,75 @@
+.user-contacts {
+  border: none;
+  margin: 0;
+  padding-bottom: 27px;
+  border-bottom: 1px solid @basic-gray-lightest;
+}
+
+.user-contacts__legend {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding-top: 21px;
+}
+
+.user-contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 0;
+}
+
+.user-contacts__item {
+  padding-top: 13px;
+
+  label {
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 22px;
+    line-height: 26px;
+    color: @basic-black-light;
+  }
+}
+
+.user-contacts__input {
+  height: 58px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::placeholder {
+    color: @basic-black;
+  }
+
+  &:hover {
+    outline: 4px solid @basic-gray-lightest;
+    background-color: @basic-gray-lightest;
+  }
+
+  &:focus {
+    outline: 4px solid @basic-gray-lightest;
+    background-color: @basic-white;
+  }
+
+  &--phone {
+    background:
+      url("../img/icons/phone.svg") 93% 50% no-repeat,
+      radial-gradient(4em 100em at 98% 55%, @basic-gray-white-dark 70%, transparent 0%),
+      @basic-white-gray;
+  }
+
+  &--email {
+    background:
+      url("../img/icons/mail.svg") 93% 50% no-repeat,
+      radial-gradient(4em 100em at 98% 55%, @basic-gray-white-dark 70%, transparent 0%),
+      @basic-white-gray;
+  }
+}
