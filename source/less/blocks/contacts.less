@@ -1,6 +1,10 @@
 .contacts {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contacts__info {
@@ -8,4 +12,21 @@
   font-weight: 700;
   line-height: 32px;
   margin: 37px auto 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 47px 36px 0;
+  }
+}
+
+.contacts__social {
+  margin: 22px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 28px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    margin-left: 87px;
+  }
 }

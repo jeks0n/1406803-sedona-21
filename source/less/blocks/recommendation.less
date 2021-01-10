@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    min-height: 265px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,32 +18,153 @@
     margin-left: 20px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      left: 50%;
+      margin: 21px 0 0;
+      transform: translate(-45%, 0);
+      height: 75px;
+      width: 75px;
+    }
   }
 }
 
-.recommendation--house::before {
-  background-image: url("../img/icons/house.svg");
-  background-size: 39px 37px;
+.recommendation--house {
+  &::before {
+    background-image: url("../img/icons/house.svg");
+    background-size: 39px 37px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-60%, 0%);
+    }
+  }
+
+  .recommendation__title {
+    @media (min-width: @desktop-width) {
+      transform: translate(-11%, -10%);
+    }
+  }
+
+  .recommendation__description {
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      width: 170px;
+      transform: translate(0%, -5%);
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 300px;
+      transform: translate(-2%, -20%);
+    }
+  }
 }
 
-.recommendation--food::before {
-  background-image: url("../img/icons/food.svg");
-  background-size: 40px 35px;
+.recommendation--food {
+  &::before {
+    background-image: url("../img/icons/food.svg");
+    background-size: 40px 35px;
+
+    @media (min-width: @tablet-width) {
+      transform: translate(-36%, 9%);
+      background-size: 76px 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-79%, 10%);
+    }
+  }
+
+  .recommendation__title {
+    @media (min-width: @tablet-width) {
+      transform: translate(31%, 14%);
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-52%, 0%);
+    }
+  }
+
+  .recommendation__description {
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      width: 155px;
+      transform: translate(7%, 2%);
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 300px;
+      transform: translate(-6%, -13%);
+    }
+  }
 }
 
-.recommendation--gift::before {
-  background-image: url("../img/icons/gift.svg");
-  background-size: 30px 39px;
+.recommendation--gift {
+  &::before {
+    background-image: url("../img/icons/gift.svg");
+    background-size: 30px 39px;
+
+    @media (min-width: @tablet-width) {
+      transform: translate(-37%, 9%);
+      background-size: 64px 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-71%, 10%);
+    }
+  }
+
+  .recommendation__title {
+    @media (min-width: @tablet-width) {
+      transform: translate(10%, 0%);
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-13%, 0%);
+    }
+  }
+
+  .recommendation__description {
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      width: 193px;
+      transform: translate(5%, -10%);
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-width: 260px;
+      transform: translate(-6%, -13%);
+    }
+  }
 }
 
 .recommendation__title {
   margin: 0 68px 0;
   min-height: 43px;
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 21px;
+    margin: 0 auto;
+    min-height: min-content;
+  }
 }
 
 .recommendation__description {
   margin: -5px 25px  0 68px;
   min-height: 43px;
   color: @basic-black-light;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 0;
+  }
 }

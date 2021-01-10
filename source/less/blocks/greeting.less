@@ -7,6 +7,21 @@
     url("../img/mobile-welcome.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 129px;
+    margin-top: -54px;
+    background-image:
+      url("../img/tablet-back-pattern.svg"),
+      url("../img/tablet-welcome.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -164px;
+    background-image:
+      url("../img/desktop-back-pattern.svg"),
+      url("../img/desktop-welcome.jpg");
+  }
 }
 
 .greeting__welcome-image {
@@ -16,4 +31,15 @@
   bottom: 4px;
   width: 280px;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 154px;
+    bottom: 14px;
+    width: 461px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 370px;
+  }
 }
