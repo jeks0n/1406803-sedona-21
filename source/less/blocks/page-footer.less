@@ -1,4 +1,24 @@
-.page-footer__wrapper {
+.page-footer {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.page-footer__contacts {
+  @media (min-width: @desktop-width) {
+    margin: 7px 0 0 60px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    margin: 12px 0 0 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 22px 0 0 60px;
+  }
 }

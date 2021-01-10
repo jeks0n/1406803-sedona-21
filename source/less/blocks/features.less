@@ -4,6 +4,15 @@
   background-image: url("../img/feature-pattern.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    min-height: 197px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 183px;
+  }
 }
 
 .features__slogan {
@@ -12,6 +21,16 @@
   line-height: 26px;
   padding: 35px 24px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 9px;
+    font-size: 21px;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 .features__text {
@@ -28,6 +47,38 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: none;
+    grid-template-areas:
+      "first first first"
+      "second second second"
+      "third forth fifth";
+  }
+}
+
+.features__item {
+  @media (min-width: @tablet-width) {
+    &:nth-child(1) {
+      grid-area: first;
+    }
+
+    &:nth-child(2) {
+      grid-area: second;
+    }
+
+    &:nth-child(3) {
+      grid-area: third;
+    }
+
+    &:nth-child(4) {
+      grid-area: forth;
+    }
+
+    &:nth-child(5) {
+      grid-area: fifth;
+    }
+  }
 }
 
 .features__additional-list {
@@ -36,6 +87,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: none;
+    grid-template-areas: "house food gift";
+  }
 }
 
 .features__additional-item {
@@ -43,9 +99,23 @@
 
   &:first-child {
     padding-top: 38px;
+
+    @media (min-width: @tablet-width) {
+      grid-area: house;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      grid-area: gift;
+    }
   }
 
   &:last-child {
     padding-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      grid-area: food;
+    }
   }
 }
