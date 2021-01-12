@@ -1,34 +1,77 @@
 .feedback__wrapper {
   text-align: center;
   border-bottom: 1px solid @basic-gray-lightest;
+
+  @media (min-width: @tablet-width) {
+    min-height: 210px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 180px;
+  }
 }
 
 .feedback__slogan {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  padding-top: 37px;
+  padding: 37px 20px 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin: 26px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 77px;
+  }
 }
 
 .feedback__text {
   line-height: 24px;
   margin-top: 29px;
   color: @basic-black-light;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 33px auto 0;
+    width: 434px;
+  }
 }
 
 .feedback__bottom {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 39px;
+  }
 }
 
 .feedback__button {
-  margin: 26px auto 23px;
-  padding: 8px 0 0;
+  margin: 40px auto 38px;
+  padding: 8px 11px 0 0;
   width: 280px;
   min-height: 58px;
   font-size: 21px;
   line-height: 26px;
   background-color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    margin: 48px 0 23px;
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 19px;
+    padding: 8px 0 0 1px;
+    width: 480px;
+  }
 
   &:hover {
     background-color: @basic-blue-dark;
@@ -41,7 +84,13 @@
 }
 
 .feedback__legend {
-  &--hidden {
-    display: none;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin: 68px 0 23px;
+    font-size: 14px;
+    line-height: 26px;
+    color: @basic-black-light;
   }
 }

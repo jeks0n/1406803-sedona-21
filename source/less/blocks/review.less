@@ -4,4 +4,43 @@
   grid-template-rows: min-content;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: none;
+    grid-template-areas:
+      "impression introducing"
+      "contacts contacts"
+      "sightseeing sightseeing"
+      "emotion emotion";
+  }
+}
+
+.review__introducing {
+  @media (min-width: @tablet-width) {
+    grid-area: introducing;
+  }
+}
+
+.review__user-contacts {
+  @media (min-width: @tablet-width) {
+    grid-area: contacts;
+  }
+}
+
+.review__impression {
+  @media (min-width: @tablet-width) {
+    grid-area: impression;
+  }
+}
+
+.review__sightseeing {
+  @media (min-width: @tablet-width) {
+    grid-area: sightseeing;
+  }
+}
+
+.review__emotion {
+  @media (min-width: @tablet-width) {
+    grid-area: emotion;
+  }
 }

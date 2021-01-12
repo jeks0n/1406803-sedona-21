@@ -3,6 +3,28 @@
   margin: 0;
   padding-bottom: 17px;
   border-bottom: 1px solid @basic-gray-lightest;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+    min-width: 303px;
+    position: relative;
+    border-bottom: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 168px;
+      left: 62%;
+      height: 1px;
+      width: 292px;
+      transform: rotate(90deg);
+      border-bottom: 1px solid @basic-gray-middle;
+
+      @media (min-width: @desktop-width) {
+        left: 78.6%;
+      }
+    }
+  }
 }
 
 .impression__legend {
@@ -12,6 +34,16 @@
   font-weight: 700;
   margin: auto;
   padding-top: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-left: 0;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .impression__list {
@@ -22,6 +54,14 @@
 
 .impression__item {
   margin: 23px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 33px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 3px;
+  }
 
   label {
     position: relative;
@@ -48,6 +88,10 @@
       height: 55px;
       border-radius: 50%;
       background-color: @basic-white-gray;
+
+      @media (min-width: @tablet-width) {
+        left: -76px;
+      }
     }
 
     &:hover {
@@ -77,6 +121,10 @@
       height: 21px;
       border-radius: 50%;
       background-color: @basic-black-light;
+
+      @media (min-width: @tablet-width) {
+        left: -59px;
+      }
     }
   }
 
