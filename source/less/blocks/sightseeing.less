@@ -3,6 +3,42 @@
   margin: 0;
   padding-bottom: 4px;
   border-bottom: 1px solid @basic-gray-lightest;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 4px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 61px;
+      height: 1px;
+      width: 123px;
+      border-bottom: 1px solid @basic-gray-middle;
+
+      @media (min-width: @desktop-width) {
+        left: 120px;
+        width: 280px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 585px;
+      height: 1px;
+      width: 123px;
+      border-bottom: 1px solid @basic-gray-middle;
+
+      @media (min-width: @desktop-width) {
+        left: 800px;
+        width: 280px;
+      }
+    }
+  }
 }
 
 .sightseeing__legend {
@@ -13,16 +49,44 @@
   text-align: center;
   margin: auto;
   padding-top: 13px;
+  width: 270px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .sightseeing__list {
   list-style: none;
   padding: 0;
   margin-top: -15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: 260px 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 9px;
+    margin-left: -93px;
+    display: grid;
+    grid-template-columns: 259px 258px 238px 248px;
+  }
 }
 
 .sightseeing__item {
   margin: 34px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+    margin-left: 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+    margin-left: 96px;
+  }
 
   label {
     position: relative;
@@ -35,6 +99,10 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: none;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+    }
   }
 }
 
@@ -49,6 +117,10 @@
       height: 56px;
       border-radius: 7px;
       background-color: @basic-white-gray;
+
+      @media (min-width: @desktop-width) {
+        border-radius: 0;
+      }
     }
 
     &:hover {

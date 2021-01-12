@@ -13,3 +13,5 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+
+!normalize.css

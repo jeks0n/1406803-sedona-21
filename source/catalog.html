@@ -12,7 +12,11 @@
   <div class="main-wrapper">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-small.svg" width="102" height="84" alt="Город Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop-logo.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet-logo.svg">
+          <img src="img/mobile-logo.svg" alt="Город Седона">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--close " type="button">

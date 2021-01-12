@@ -2,6 +2,15 @@
   border: none;
   padding-bottom: 24px;
   border-bottom: 1px solid @basic-gray-lightest;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 100px;
+    border-bottom: none;
+  }
 }
 
 .introducing__legend {
@@ -12,6 +21,12 @@
   text-align: center;
   margin: auto;
   padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-left: 0;
+    padding-bottom: 33px;
+  }
 }
 
 .introducing__list {

@@ -3,6 +3,10 @@
   margin: 0;
   padding-bottom: 5px;
 
+  @media (min-width: @desktop-width) {
+    padding-bottom: 4px;
+  }
+
   textarea {
     box-sizing: border-box;
     margin: 13px 0 0 -3px;
@@ -17,6 +21,18 @@
     font-weight: 700;
     border: 4px solid @basic-white-gray;
     background-color: @basic-white-gray;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      padding-top: 16px;
+      width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 11px;
+      padding-top: 15px;
+      width: 960px;
+    }
 
     &::placeholder {
       color: @basic-black;
@@ -42,4 +58,43 @@
   text-align: center;
   margin: auto;
   padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 59px;
+    padding-bottom: 39px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: -199px;
+      height: 1px;
+      width: 123px;
+      border-bottom: 1px solid @basic-gray-middle;
+
+      @media (min-width: @desktop-width) {
+        top: 63px;
+        left: -355px;
+        width: 280px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: 326px;
+      height: 1px;
+      width: 123px;
+      border-bottom: 1px solid @basic-gray-middle;
+
+      @media (min-width: @desktop-width) {
+        top: 63px;
+        left: 325px;
+        width: 280px;
+      }
+    }
+  }
 }
