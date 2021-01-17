@@ -2,10 +2,20 @@
   position: relative;
   height: 26px;
   width: 281px;
-  margin: -51px auto 0;
+  margin: -51px auto 105px;
   padding-top: 19px;
   background-color: @basic-black-light-transparent;
   border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 75px;
+    width: 648px;
+    margin-top: -100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .video-control::before {
@@ -16,6 +26,16 @@
   width: 235px;
   height: 3px;
   background-color: @basic-white-super-transparent;
+
+  @media (min-width: @tablet-width) {
+    top: 46px;
+    left: 92px;
+    width: 389px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
 }
 
 .video-control__wrapper {
@@ -25,6 +45,12 @@
   padding-top: 19px;
   background-color: @basic-white-gray;
   border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .video-control__button {
@@ -33,9 +59,20 @@
   background-color: transparent;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    path {
+      fill: @basic-white;
+    }
+  }
+
   &:hover {
     path {
       fill: @basic-black-light;
+
+      @media (min-width: @tablet-width) {
+        opacity: 0.6;
+        fill: @basic-white;
+      }
     }
   }
 
@@ -43,32 +80,66 @@
     path {
       opacity: 0.3;
       fill: @basic-black-light;
+
+      @media (min-width: @tablet-width) {
+        opacity: 0.3;
+        fill: @basic-white;
+      }
     }
   }
 }
 
 .video-control__button--toggle-volume {
   position: absolute;
+  left: 58px;
   padding: 1px;
   width: 7px;
   height: 7px;
   box-sizing: content-box;
   border-radius: 50%;
   background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+    left: 205px;
+  }
 }
 
 .video-control__button--replay {
   position: absolute;
   left: 19px;
   padding-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    top: 33px;
+    left: 30px;
+  }
 }
 
 .video-control__button--subtitles {
   position: absolute;
   left: 170px;
+
+  @media (min-width: @tablet-width) {
+    top: 33px;
+    left: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 670px;
+  }
 }
 
 .video-control__button--fullscreen {
   position: absolute;
   left: 233px;
+
+  @media (min-width: @tablet-width) {
+    top: 33px;
+    left: 583px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 733px;
+  }
 }

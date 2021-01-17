@@ -1,23 +1,101 @@
 .picture {
-  margin: 0 0 23px;
+  margin-bottom: 23px;
   border-bottom: 1px solid @basic-gray-lightest;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "image image"
+      "title like"
+      "author like";
+    background-color: @basic-white-gray;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+    margin-bottom: -15px;
+  }
+
+  &--special {
+    @media (min-width: @tablet-width) {
+      background-color: @basic-gray-white;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: @basic-white;
+    }
+  }
 }
 
 .picture__caption {
   padding-top: 6px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    grid-area: title;
+    margin-top: 5px;
+    margin-left: -40px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -91px;
+    background-color: @basic-black-lightest-transparent;
+    color: @basic-white;
+    margin-left: -120px;
+    padding-top: 17px;
+    padding-left: 20px;
+  }
 }
 
 .picture__text {
   margin-top: 4px;
-  color: @basic-black-light;
+  color: @basic-black;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    grid-area: author;
+    margin-left: -40px;
+    padding-bottom: 3px;
+    padding-right: 60px;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    color: @basic-white;
+    top: -81px;
+    margin-top: -10px;
+    margin-left: -120px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+    background-color: @basic-black-lightest-transparent;
+    z-index: 1;
+  }
 }
 
 .picture__likes {
   font-weight: 700;
   line-height: 24px;
   margin-top: -4px;
+
+  @media (min-width: @tablet-width) {
+    grid-area: like;
+    position: relative;
+    left: -52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+    margin-top: -100px;
+    top: 16px;
+    left: -54px;
+    z-index: 1;
+  }
 
   &::before {
     content: "";
@@ -30,5 +108,25 @@
     background-image: url("../img/icons/like.svg");
     background-size: 23px 21px;
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 26px;
+      left: -31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/icons/like_white.svg");
+    }
+  }
+}
+
+.picture__image {
+  @media (min-width: @tablet-width) {
+    grid-area: image;
+    margin-left: -60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -120px;
   }
 }
