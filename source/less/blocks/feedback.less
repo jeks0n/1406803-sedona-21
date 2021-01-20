@@ -44,6 +44,7 @@
 
 .feedback__bottom {
   text-align: center;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -55,7 +56,7 @@
 
 .feedback__button {
   margin: 40px auto 38px;
-  padding: 8px 11px 0 0;
+  padding: 8px 2px 0 0;
   width: 280px;
   min-height: 58px;
   font-size: 21px;
@@ -63,13 +64,14 @@
   background-color: @basic-blue;
 
   @media (min-width: @tablet-width) {
-    margin: 48px 0 23px;
+    margin: 48px 62px 23px;
+    padding-right: 10px;
     width: 324px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 19px;
-    padding: 8px 0 0 1px;
+    margin: 48px 120px 19px;
+    padding-right: 0;
     width: 480px;
   }
 
@@ -88,9 +90,13 @@
 
   @media (min-width: @tablet-width) {
     display: inline-block;
-    margin: 68px 0 23px;
+    margin: 68px 62px 23px;
     font-size: 14px;
     line-height: 26px;
     color: @basic-black-light;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 121px;
   }
 }

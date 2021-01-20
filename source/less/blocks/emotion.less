@@ -1,15 +1,19 @@
 .emotion {
   border: none;
   margin: 0;
-  padding-bottom: 5px;
+  padding: 0 20px 5px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 62px 5px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 4px;
+    padding: 0 120px 4px;
   }
 
   textarea {
     box-sizing: border-box;
-    margin: 13px 0 0 -3px;
+    margin: 13px 0 0 0;
     padding-top: 10px;
     padding-left: 17px;
     padding-right: 17px;
