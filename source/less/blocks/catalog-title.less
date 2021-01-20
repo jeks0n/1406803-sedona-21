@@ -6,7 +6,23 @@
     url("../img/mobile-back-pattern.svg"),
     url("../img/mobile-back-decoration.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: left bottom;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -54px;
+    padding-top: 132px;
+    background-image:
+      url("../img/tablet-back-pattern.svg"),
+      url("../img/tablet-back-decoration.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -164px;
+    padding-top: 143px;
+    background-image:
+      url("../img/desktop-back-pattern.svg"),
+      url("../img/desktop-back-decoration.jpg");
+  }
 }
 
 .catalog-title__image {
@@ -16,4 +32,11 @@
   bottom: 13px;
   width: 229px;
   margin: auto;
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: 368px;
+    bottom: 20px;
+    width: 461px;
+  }
 }
