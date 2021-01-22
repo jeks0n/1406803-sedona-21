@@ -15,7 +15,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/desktop-logo.svg">
           <source media="(min-width: 768px)" srcset="img/tablet-logo.svg">
-          <img src="img/mobile-logo.svg" alt="Город Седона">
+          <img src="img/mobile-logo.svg" width="102" height="84" alt="Город Седона">
         </picture>
       </a>
       <nav class="main-nav main-nav--opened">
@@ -54,7 +54,11 @@
 
       <section class="greeting">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="greeting__welcome-image" src="img/welcome-text.svg" alt="Скалы Седоны лучше Великого Каньона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop-welcome-text.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet-welcome-text.svg">
+          <img class="greeting__welcome-image" src="img/mobile-welcome-text.svg" width="282" height="214" alt="Скалы Седоны лучше Великого Каньона">
+        </picture>
       </section>
 
       <section class="features">
@@ -72,9 +76,9 @@
                 <p class="reason__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/desktop-sedona-afternoon@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/tablet-sedona-afternoon@1x.jpg">
-                <img class="reason__image" src="img/mobile-sedona-afternoon.jpg" alt="Седона днём">
+                <source media="(min-width: 1200px)" srcset="img/desktop-sedona-afternoon@1x.jpg 1x, img/desktop-sedona-afternoon@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet-sedona-afternoon@1x.jpg 1x, img/tablet-sedona-afternoon@2x.jpg 2x">
+                <img class="reason__image" src="img/mobile-sedona-afternoon@1x.jpg" srcset="img/mobile-sedona-afternoon@2x.jpg 2x" alt="Седона днём">
               </picture>
             </div>
             <ul class="features__additional-list">
@@ -106,9 +110,9 @@
                 <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/desktop-sedona-bridge@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/tablet-sedona-bridge@1x.jpg">
-                <img class="reason__image" src="img/mobile-sedona-bridge.jpg" alt="Седонский мост">
+                <source media="(min-width: 1200px)" srcset="img/desktop-sedona-bridge@1x.jpg 1x, img/desktop-sedona-bridge@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet-sedona-bridge@1x.jpg 1x, img/tablet-sedona-bridge@2x.jpg 2x">
+                <img class="reason__image" src="img/mobile-sedona-bridge@1x.jpg" srcset="img/mobile-sedona-bridge@2x.jpg 2x" alt="Седонский мост">
               </picture>
             </div>
           </li>
