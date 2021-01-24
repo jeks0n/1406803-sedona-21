@@ -7,7 +7,6 @@ navToggleButton.addEventListener('click', function (evt) {
     navToggleButton.classList.remove(mainNavOpened);
     return navToggleButton.classList.add(mainNavClosed);
   }
-
   navToggleButton.classList.remove(mainNavClosed);
   navToggleButton.classList.add(mainNavOpened);
 });
