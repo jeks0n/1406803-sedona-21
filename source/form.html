@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Форма отзыва</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page__body">
 
@@ -34,10 +34,10 @@
           <img src="img/mobile-logo.svg" width="102" height="84" alt="Город Седона">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close " type="button">
-          <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23 2.77L20.1 0l-8.6 8.23L2.9 0 0 2.77 8.6 11 0 19.23 2.9 22l8.6-8.23L20.1 22l2.9-2.77L14.4 11 23 2.77z" fill="#fff"/></svg>
-          <svg class="visually-hidden" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__image main-nav__image--open" width="23" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23 2.77L20.1 0l-8.6 8.23L2.9 0 0 2.77 8.6 11 0 19.23 2.9 22l8.6-8.23L20.1 22l2.9-2.77L14.4 11 23 2.77z" fill="#fff"/></svg>
+          <svg class="main-nav__image main-nav__image--close" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
